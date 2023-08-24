@@ -3,7 +3,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 export const fetchNews = createAsyncThunk('newsfetch', async()=>{
   const response = await fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=b994fa03b13a4d578a290a7e979b65a9');
-  return response.json
+  return response.json()
 })
 
 const NewsSlices = createSlice({
