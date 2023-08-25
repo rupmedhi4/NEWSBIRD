@@ -1,20 +1,30 @@
-.news_img{
-    width: 100%;
+.news_img {
+  width: 100%;
 }
-.news_container{
-    margin-left: 2rem;
-    padding: 5rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.news_container {
+  margin-left: 2rem;
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
-.inner_cart_container{
-    border: 2px solid rgb(114, 114, 127);
-    padding: 0.5rem;
-    margin: 1rem;
+.inner_cart_container {
+  border: 2px solid rgb(114, 114, 127);
+  padding: 0.5rem;
+  margin: 1rem;
 }
-.inner_cart_description{
-    margin-bottom: 1rem;
+.inner_cart_description {
+  margin-bottom: 1rem;
+  text-align: justify;
+  margin-top: 1rem;
 }
-.inner_cart_span{
-    margin-top: 6rem;
+.inner_cart_span {
+  margin-top: 6rem;
+}
+.read_more_btn {
+  background: #7a5353;
+  color: white;
+  margin-top: 1rem;
+  padding: 0.3rem;
+  border-radius: 0.5rem 0.5rem;
+  cursor: pointer;
 }
