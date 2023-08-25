@@ -13,12 +13,15 @@ export default function NewsCarts() {
 
     useEffect(() => {
         handleFetchNews("sports");
+        console.log(data.articles.length)
     }, []);
+
+    const displayedNews = data && data.articles ? data.articles.slice(0, 6) : [];
 
     return (
         <div className='news_container'>
-            {data && data.articles ? (
-                data.articles.map((news) => (
+            {displayedNews ? (
+                displayedNews.map((news) => (
                     <div className='inner_cart_container' key={news.title}>
                         <img src={news.urlToImage} alt="no img" className='news_img' />
                         <div className='inner_cart_description'>
