@@ -1,0 +1,20 @@
+.news_img{
+    width: 100%;
+}
+.news_container{
+    margin-left: 2rem;
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.inner_cart_container{
+    border: 2px solid rgb(114, 114, 127);
+    padding: 0.5rem;
+    margin: 1rem;
+}
+.inner_cart_description{
+    margin-bottom: 1rem;
+}
+.inner_cart_span{
+    margin-top: 6rem;
+}

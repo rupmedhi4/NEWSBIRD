@@ -19,6 +19,7 @@ display: flex;
     color: aliceblue;
     list-style: none;
     margin-top: 0.5rem;
+    cursor: pointer;
     
 }
 .container_ul_li{
