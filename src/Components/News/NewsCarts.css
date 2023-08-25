@@ -3,7 +3,9 @@
 }
 .news_container {
   margin-left: 2rem;
-  padding: 5rem;
+  padding-top: 2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }

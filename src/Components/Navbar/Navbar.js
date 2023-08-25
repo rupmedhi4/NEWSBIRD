@@ -3,7 +3,7 @@ import './Navbar.css'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchNews } from '../Redux/Slices/NewsSlices';
-import { setCurrentPage } from '../Redux/Slices/PaginationSlice';
+import { setCategory, setCurrentPage } from '../Redux/Slices/PaginationSlice';
 
 export default function Navbar() {
   const {currentPage } = useSelector((state) => state.PaginationSlice);
@@ -12,7 +12,7 @@ export default function Navbar() {
 
   const handleFetchNews = (category) => {
      dispatch(fetchNews({category}));
-     dispatch(setCurrentPage(0));
+     dispatch(setCategory(category));
   }
      
   
